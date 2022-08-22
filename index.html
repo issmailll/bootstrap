@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <header class="container"> 
+        <header>
+            <div class="row py-5 justify-content-between">
+                <h1 class="col-6">Gilos.uz/smartphones</h1>
+                <button type="button" class="col-6 w-25 btn btn-primary btn-lg">Add product<span class="badge text-bg-primary">+</span></button>
+            </div>
+            <form action="#">
+                <div class="d-flex mb-5">
+                    <div class="w-25 me-3">
+                        <h2 class="h4 mb-4">Filter</h2>
+                        <label for="Search" class="form-label">Search</label>
+                        <input class="mb-3 form-control" list="SearchOptions" id="Search" placeholder="Falonchi">
+                        <label for="price" class="form-label">Price</label>
+                        <div class="d-flex justify-content-between mb-3">
+                            <input class="form-control col-6" style="width: 8rem;" list="datalistOptions" id="price" placeholder="From">
+                            <input class="form-control col-6" style="width: 8rem;" list="datalistOptions" id="price" placeholder="To">
+                        </div> 
+                        <label for="manufacturer" class="form-label">manufacturer</label>
+                        <select class="form-select mb-3">
+                            <option id="manufacturer" selected>All</option>
+                        </select>
+                        <label for="Name" class="form-label">Sort by</label>
+                        <select class="form-select mb-3">
+                            <option id="Name" selected>Name</option>
+                        </select>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="button">Filter</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="h4">Product list</h2>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/nature-img.jpg" class="card-img-top" alt="image of nature">
+                            <div class="card-body">
+                                <h3 class="card-title">Gadget title</h3>
+                                <p class="mb-2 fw-bold">2.000.000</p>
+                                <p class="mb-2 text-decoration-line-through text-muted">2.000.000</p>
+                                <p class="card-text bg-success text-white fw-bold rounded-2 ps-2 mb-3">Xiaomi (gatget firmasi)</p>
+                                <p class="card-text">12.05.2022</p>
+                                <div class="row justify-content-start">
+                                    <p style="width: 4rem;" class="text-white fw-bold col-4 me-2 bg-primary rounded-2">8gb</p>
+                                    <p style="width: 5rem;" class="text-white fw-bold col-4 me-2 bg-primary rounded-2">128gb</p>
+                                    <p style="width: 7rem;" class="text-white fw-bold col-4  bg-primary rounded-2">waterproof</p>
+                                    <p style="width: 11rem;" class="text-white fw-bold col-4  bg-primary rounded-2">Falon yaxshi tarafi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ms-auto fw-bold">count: 4</p>
+                </div>
+            </form>
+        </header>
+    </header>
+</body>
+</html>
